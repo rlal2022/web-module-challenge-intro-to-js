@@ -22,7 +22,7 @@ Do the following:
 
 var votingAge = 18;
 
-if (votingAge === 18) {
+if (votingAge >= 18) {
   console.log("true");
 }
 
