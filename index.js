@@ -228,11 +228,12 @@ Using the annoyingSong function below do the following:
 */
 
 function annoyingSong(newSong) {
-  for (let i = 0; i < 1; i++) {
-    console.log(`${newSong} bottles of soda on the wall, ${newSong} bottles of soda, take one down pass it around ${newSong - 1} bottles of soda on the wall`)
+  for (let i = newSong; i <= 100; i == 1) {
+    console.log(`${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i - 1} bottles of soda on the wall`);
   }
-
 }
+annoyingSong();
+
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -251,15 +252,15 @@ Using the grade function below do the following:
 */
 
 function grade(testScore) {
-  if (testScore >= 90 && testScore <= 100) {
+  if (testScore >= 90 || testScore <= 100) {
     console.log("you got an A");
-  } else if (testScore >= 80 && testScore <= 89) {
+  } else if (testScore >= 80 || testScore <= 89) {
     console.log("you got a B");
-  } else if (testScore >= 70 && testScore <= 79) {
+  } else if (testScore >= 70 || testScore <= 79) {
     console.log("you get a C");
-  } else if (testScore >= 60 && testScore <= 69) {
+  } else if (testScore >= 60 || testScore <= 69) {
     console.log("you get a D");
-  } else { testScore >= 0 && testScore <= 60 } {
+  } else { testScore >= 0 || testScore <= 60 } {
     console.log("you get an F")
   }
   return grade;
