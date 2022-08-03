@@ -231,6 +231,7 @@ function miles(x) {
   return x * 0.621371;
 }
 
+console.log(miles(5));
 
 
 //Task 5b - Feet to CM
@@ -244,6 +245,8 @@ Using the feet function below do the following:
 function feet(y) {
   return y / 30.48;
 }
+
+console.log(feet(3));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
