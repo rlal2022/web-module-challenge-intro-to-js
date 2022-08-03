@@ -264,8 +264,7 @@ function grade(testScore) {
     console.log("you get an F");
   }
 }
-
-console.log(grade(74));
+grade(74);
 
 
 
