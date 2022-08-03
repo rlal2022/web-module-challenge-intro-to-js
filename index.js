@@ -252,19 +252,21 @@ Using the grade function below do the following:
 */
 
 function grade(testScore) {
-  if (testScore >= 90 || testScore >= 100) {
+  if (testScore >= 100 && testScore >= 90) {
     console.log("you got an A");
-  } else if (testScore < 80 || testScore >= 89) {
+  } else if (testScore < 89 && testScore >= 80) {
     console.log("you got a B");
-  } else if (testScore < 70 || testScore >= 79) {
+  } else if (testScore < 79 && testScore >= 70) {
     console.log("you get a C");
-  } else if (testScore < 60 || testScore >= 69) {
+  } else if (testScore < 70 && testScore >= 60) {
     console.log("you get a D");
-  } else { testScore < 0 || testScore >= 60 } {
-    console.log("you get an F")
+  } else if (testScore < 60 && testScore >= 0) {
+    console.log("you get an F");
   }
-  return grade;
 }
+
+console.log(grade(64));
+
 
 
 
