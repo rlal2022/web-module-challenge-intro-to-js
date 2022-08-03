@@ -229,10 +229,10 @@ Using the annoyingSong function below do the following:
 
 function annoyingSong(newSong) {
   for (let i = newSong; i > 0; i--) {
-    console.log(`${newSong} bottles of soda on the wall, ${newSong} bottles of soda, take one down pass it around ${newSong - 1} bottles of soda on the wall`);
+    return `${newSong} bottles of soda on the wall, ${newSong} bottles of soda, take one down pass it around ${newSong - 1} bottles of soda on the wall`;
   }
+  console.log(newSong(100));
 }
-annoyingSong();
 
 
 
