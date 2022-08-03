@@ -209,10 +209,40 @@ Use the game function below to do the following:
 RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors | Or there's a tie
 */
 
+let computer = Math.random()
+
+if (computer >= 0 && computer <= 0.33) {
+  computer = "rock";
+} else if (computer >= 0.33 && computer <= 0.66) {
+  computer = "paper";
+} else if (computer >= 0.66 && computer <= 1) {
+  computer = "rock";
+}
 function game(user, computer) {
-  if (user === rock) { }
+  if (user === computer) {
+    console.log("It's a tie!");
+  } else if (user === "scissors" && computer === "paper") {
+    console.log("You win!");
+  } else if (user === "paper" && computer === "rock") {
+    console.log("You win!")
+  } else if (user === "rock" && computer === "scissors") {
+    console.log("You win!")
+  } else if (user === "scissors" && computer === "scissors") {
+    console.log("It's a Tie!")
+  } else if (user === "rock" && computer === "rock") {
+    console.log("It's a Tie!")
+  } else if (user === "paper" && computer === "paper") {
+    console.log("It's a Tie!")
+  } else if (user === "paper" && computer === "scissors") {
+    console.log("You lose!");
+  } else if (user === "rock" && computer === "paper") {
+    console.log("You lose!")
+  } else if (user === "scissors" && computer === "rock") {
+    console.log("You lose!")
+  }
 }
 
+game("rock", computer);
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -256,9 +286,9 @@ console.log(feet(3));
 Using the annoyingSong function below do the following:
 1. Receive a starting number
 2. The annoying song function should return the following string exactly one time:
-
+ 
     "{number you gave as an argument} bottles of soda on the wall, {number you gave as an argument} bottles of soda, take one down pass it around {number you gave as an argument minus 1} bottles of soda on the wall"
-
+ 
 3. Outside of the function, Make a loop that invokes annoying song with a number that decreases until it gets to 1 bottle left. 
 4. Each time the annoyingSong is run from this loop, it should console.log the string that was returned. 
 */
@@ -279,7 +309,7 @@ function annoyingSong(newSong) {
 Using the grade function below do the following: 
 1. Receive a score out of 100 
 2. Return the corresponding letter grade following this grade scale:
-
+ 
  90-100 should return 'you got an A' 
  80-89 should return 'you got a B'
  70-79 should return 'you got a C'
@@ -312,7 +342,7 @@ grade(74);
 Using the vowelCounter function below do the following:
 1. Receive a string as a parameter
 2. Count and return the number of vowels within that string.  It should handle both capitalized and uncapitalized vowels.
-
+ 
 HINT - you may need to study tomorrow's content on arrays 
 HINT - try looking up the .includes() method
 */
