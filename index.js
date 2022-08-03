@@ -313,11 +313,11 @@ function grade(testScore) {
   } else if (testScore < 89 && testScore >= 80) {
     return "you got a B";
   } else if (testScore < 79 && testScore >= 70) {
-    return "you get a C";
+    return "you got a C";
   } else if (testScore < 70 && testScore >= 60) {
-    return "you get a D";
+    return "you got a D";
   } else if (testScore < 60) {
-    return "you get an F";
+    return "you got an F";
   }
 }
 grade(74);
