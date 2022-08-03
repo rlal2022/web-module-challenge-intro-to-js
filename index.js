@@ -253,15 +253,15 @@ Using the grade function below do the following:
 
 function grade(testScore) {
   if (testScore >= 90) {
-    console.log("you got an A");
+    return "you got an A";
   } else if (testScore < 89 && testScore >= 80) {
-    console.log("you got a B");
+    return "you got a B";
   } else if (testScore < 79 && testScore >= 70) {
-    console.log("you get a C");
+    return "you get a C";
   } else if (testScore < 70 && testScore >= 60) {
-    console.log("you get a D");
+    return "you get a D";
   } else if (testScore < 60) {
-    console.log("you get an F");
+    return "you get an F";
   }
 }
 grade(74);
