@@ -41,13 +41,14 @@ Do the following:
    HINT: no function required
 */
 
-let firstThing = "100";
-let secondThing = "200";
+let firstThing = "cold";
+let secondThing = "hot";
 
-if (firstThing === 100) {
-  console.log("true");
-
+if (secondThing === "hot") {
+  firstThing = "warm";
 }
+else { firstThing = "cold" }
+
 
 
 
