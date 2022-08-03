@@ -228,8 +228,8 @@ Using the annoyingSong function below do the following:
 */
 
 function annoyingSong(newSong) {
-  for (let i = newSong; i <= 100; i == 1) {
-    console.log(`${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i - 1} bottles of soda on the wall`);
+  for (let i = newSong; i > 0; i--) {
+    console.log(`${newSong} bottles of soda on the wall, ${newSong} bottles of soda, take one down pass it around ${newSong - 1} bottles of soda on the wall`);
   }
 }
 annoyingSong();
