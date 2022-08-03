@@ -24,6 +24,8 @@ var votingAge = 18;
 
 if (votingAge >= 18) {
   console.log("true");
+} else {
+  console.log("false");
 }
 
 
@@ -81,6 +83,8 @@ function multiply(a, b) {
   return a * b;
 }
 
+multiply(5, 3);
+
 
 
 
@@ -99,7 +103,7 @@ function dogYears(newAge) {
   return newAge * 7;
 }
 
-dogYears();
+dogYears(4);
 
 
 
